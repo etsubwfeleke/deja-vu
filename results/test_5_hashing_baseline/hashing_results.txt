@@ -1,0 +1,76 @@
+Perceptual Hash-Based Evaluation
+==================================================
+
+Counts:
+  Banned videos: 52
+  Easy re-uploads: 416
+  Hard re-uploads: 312
+  Negatives: 104
+
+Overall Mean Similarity:
+  Easy re-uploads: 0.9162
+  Hard re-uploads: 0.8796
+  Negatives: 0.7716
+
+Tier Counts (>=0.90 auto-flag, 0.70-0.89 review, <0.70 allow):
+  Easy re-uploads: auto-flag=272, review=141, allow=3
+  Hard re-uploads: auto-flag=161, review=150, allow=1
+  Negatives:      auto-flag=6, review=97, allow=1
+
+Precision/Recall/F1 (Easy Re-uploads):
+  threshold	precision	recall	f1	tp	fp	fn
+  0.50	0.8000	1.0000	0.8889	416	104	0
+  0.55	0.8000	1.0000	0.8889	416	104	0
+  0.60	0.8000	1.0000	0.8889	416	104	0
+  0.65	0.8000	1.0000	0.8889	416	104	0
+  0.70	0.8004	0.9928	0.8863	413	103	3
+  0.75	0.8992	0.8149	0.8550	339	38	77
+  0.80	0.9460	0.7163	0.8153	298	17	118
+  0.85	0.9688	0.6707	0.7926	279	9	137
+  0.90	0.9784	0.6538	0.7839	272	6	144
+  0.95	0.9848	0.6226	0.7629	259	4	157
+
+Precision/Recall/F1 (Hard Re-uploads):
+  threshold	precision	recall	f1	tp	fp	fn
+  0.50	0.7500	1.0000	0.8571	312	104	0
+  0.55	0.7500	1.0000	0.8571	312	104	0
+  0.60	0.7500	1.0000	0.8571	312	104	0
+  0.65	0.7500	1.0000	0.8571	312	104	0
+  0.70	0.7512	0.9968	0.8567	311	103	1
+  0.75	0.8498	0.6891	0.7611	215	38	97
+  0.80	0.9150	0.5865	0.7148	183	17	129
+  0.85	0.9474	0.5192	0.6708	162	9	150
+  0.90	0.9641	0.5160	0.6722	161	6	151
+  0.95	0.9737	0.4744	0.6379	148	4	164
+
+Detection Rate (Easy) @ 0.70:
+  crop: 51/52 (0.9808)
+  mirror: 51/52 (0.9808)
+  color: 52/52 (1.0000)
+  speed: 52/52 (1.0000)
+  lowq: 52/52 (1.0000)
+  text: 52/52 (1.0000)
+  trim: 52/52 (1.0000)
+  combined: 51/52 (0.9808)
+  heavytext: 0/0 (0.0000)
+  reaction: 0/0 (0.0000)
+  grayscale: 0/0 (0.0000)
+  heavycropzoom: 0/0 (0.0000)
+  vintage: 0/0 (0.0000)
+  heavycombined: 0/0 (0.0000)
+
+Detection Rate (Hard) @ 0.70:
+  crop: 0/0 (0.0000)
+  mirror: 0/0 (0.0000)
+  color: 0/0 (0.0000)
+  speed: 0/0 (0.0000)
+  lowq: 0/0 (0.0000)
+  text: 0/0 (0.0000)
+  trim: 0/0 (0.0000)
+  combined: 0/0 (0.0000)
+  heavytext: 52/52 (1.0000)
+  reaction: 51/52 (0.9808)
+  grayscale: 52/52 (1.0000)
+  heavycropzoom: 52/52 (1.0000)
+  vintage: 52/52 (1.0000)
+  heavycombined: 52/52 (1.0000)

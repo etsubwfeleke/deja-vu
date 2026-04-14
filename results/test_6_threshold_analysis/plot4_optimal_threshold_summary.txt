@@ -1,0 +1,7 @@
+Optimal Threshold Summary (max F1)
+========================================================================
+Method	Transform	Threshold	Precision	Recall	F1	TP	FP	FN
+CLIP	Easy	0.90	0.9734	0.9688	0.9711	403	11	13
+CLIP	Hard	0.75	0.8154	0.9487	0.8770	296	67	16
+ResNet	Easy	0.80	0.9905	1.0000	0.9952	416	4	0
+ResNet	Hard	0.55	0.8831	0.9199	0.9011	287	38	25

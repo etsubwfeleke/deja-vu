@@ -1,0 +1,96 @@
+Model: resnet
+Banned embeddings: 52
+Re-upload embeddings: 416
+Negative embeddings: 104
+
+Overall similarity:
+  Mean re-upload max similarity: 0.9737
+  Mean negative max similarity:  0.5082
+
+Tier counts (>=0.90 auto-flag, 0.70-0.89 review, <0.70 allow):
+  Re-uploads: auto-flag=386, review=30, allow=0
+  Negatives:  auto-flag=2, review=11, allow=91
+
+Precision/Recall/F1 by threshold:
+  threshold	precision	recall	f1	tp	fp	fn
+  0.50	0.8814	1.0000	0.9369	416	56	0
+  0.55	0.9163	1.0000	0.9563	416	38	0
+  0.60	0.9412	1.0000	0.9697	416	26	0
+  0.65	0.9519	1.0000	0.9754	416	21	0
+  0.70	0.9697	1.0000	0.9846	416	13	0
+  0.75	0.9811	1.0000	0.9905	416	8	0
+  0.80	0.9905	1.0000	0.9952	416	4	0
+  0.85	0.9902	0.9712	0.9806	404	4	12
+  0.90	0.9948	0.9279	0.9602	386	2	30
+  0.95	0.9971	0.8245	0.9026	343	1	73
+
+mAP (banned as query over re-uploads+negatives): 0.9787
+AP per query:
+  banned_001.mp4: 0.9861
+  banned_002.mp4: 1.0000
+  banned_003.mp4: 1.0000
+  banned_004.mp4: 1.0000
+  banned_005.mp4: 0.7714
+  banned_006.mp4: 1.0000
+  banned_007.mp4: 1.0000
+  banned_008.mp4: 1.0000
+  banned_009.mp4: 1.0000
+  banned_010.mp4: 1.0000
+  banned_011.mp4: 0.6207
+  banned_012.mp4: 0.5257
+  banned_013.mp4: 1.0000
+  banned_014.mp4: 1.0000
+  banned_015.mp4: 1.0000
+  banned_016.mp4: 1.0000
+  banned_017.mp4: 1.0000
+  banned_018.mp4: 1.0000
+  banned_019.mp4: 1.0000
+  banned_020.mp4: 1.0000
+  banned_021.mp4: 1.0000
+  banned_022.mp4: 1.0000
+  banned_023.mp4: 1.0000
+  banned_024.mp4: 1.0000
+  banned_025.mp4: 1.0000
+  banned_026.mp4: 1.0000
+  banned_027.mp4: 1.0000
+  banned_028.mp4: 1.0000
+  banned_029.mp4: 1.0000
+  banned_030.mp4: 1.0000
+  banned_031.mp4: 1.0000
+  banned_032.mp4: 1.0000
+  banned_033.mp4: 1.0000
+  banned_034.mp4: 1.0000
+  banned_035.mp4: 1.0000
+  banned_036.mp4: 1.0000
+  banned_037.mp4: 1.0000
+  banned_038.mp4: 1.0000
+  banned_039.mp4: 1.0000
+  banned_040.mp4: 1.0000
+  banned_041.mp4: 1.0000
+  banned_042.mp4: 1.0000
+  banned_043.mp4: 1.0000
+  banned_044.mp4: 1.0000
+  banned_045.mp4: 1.0000
+  banned_046.mp4: 1.0000
+  banned_047.mp4: 0.9861
+  banned_048.mp4: 1.0000
+  banned_049.mp4: 1.0000
+  banned_050.mp4: 1.0000
+  banned_051.mp4: 1.0000
+  banned_052.mp4: 1.0000
+
+Detection rate per transformation @ threshold 0.70:
+  crop: 52/52 (1.0000)
+  mirror: 52/52 (1.0000)
+  color: 52/52 (1.0000)
+  speed: 52/52 (1.0000)
+  lowq: 52/52 (1.0000)
+  text: 52/52 (1.0000)
+  trim: 52/52 (1.0000)
+  combined: 52/52 (1.0000)
+  heavytext: 0/0 (0.0000)
+  reaction: 0/0 (0.0000)
+  grayscale: 0/0 (0.0000)
+  heavycropzoom: 0/0 (0.0000)
+  vintage: 0/0 (0.0000)
+  heavycombined: 0/0 (0.0000)
